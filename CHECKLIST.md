@@ -53,7 +53,8 @@ Tick every line that the pushed `main` covers. A line you cannot tick needs one 
 - [ ] Names and GitHub usernames are in `README.md`.
 - [ ] A group reached `main` through pull requests, and each request names a `decisions.md` entry.
 - [ ] `requirements.txt` or `renv.lock` pins the packages the notebook imports.
-- [ ] The `data` release holds the data files, or `data/README.md` gives the command that downloads them from the source. The notebook on `main` was run from the top and committed with its outputs. Secrets and fitted weights are not in git.
+- [ ] The `data` release holds the data files, or `data/README.md` gives the command that downloads them from the source. Each file has a SHA-256 there, and the notebook checks it. The notebook on `main` was run from the top and committed with its outputs. Secrets and fitted weights are not in git.
+- [ ] The split entry in `decisions.md` records the cutoff date, or the seed and the fraction.
 
 ## Disclosure
 

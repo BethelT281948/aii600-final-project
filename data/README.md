@@ -26,8 +26,15 @@ On another machine:
 gh release download data --dir data --repo OWNER/REPO
 ```
 
+Record a SHA-256 for each file. Replacing a file with `--clobber` does not show up in git, so update the hash in the same commit:
+
+```bash
+shasum -a 256 data/your-file.csv
+```
+
 Replace the lines below.
 
 - Source, and whether the terms let you republish the files.
 - File names. On the `data` release, or the command that downloads them from the source.
+- SHA-256 of each file.
 - Unit of observation, sample size, and time span.
