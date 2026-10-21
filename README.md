@@ -26,7 +26,7 @@ Feedback comes back as an issue on the fork. I add the labels `proposal`, `preli
 
 Two people do not edit `analysis.ipynb` on two branches at once. A function you both change goes in a `.py` or `.R` file, and the notebook calls it. Before a checkpoint merge, run the notebook from the top and commit it with the outputs saved. Save the plots in `fig/`.
 
-`requirements.txt` lists the packages the notebook imports, with versions. An R project deletes that file and commits `renv.lock` instead. Do not commit data files, secrets, or fitted weights. A key stays in `.env`. When the terms allow you to republish the files, they go on the release tagged `data`, and that release exists by 18 November. When they do not, `data/README.md` gives the command that downloads the files from the source. A weight file the talk needs goes on a release. If a result depends on a random draw, the `decisions.md` entry records the seed.
+`requirements.txt` lists the packages the notebook imports, with versions, for the interpreter in `.python-version`. Replace `x.y.z` in that file with the output of `python3 --version`. An R project deletes both files and commits `renv.lock` instead. That file records the R version. Do not commit data files, secrets, or fitted weights. A key stays in `.env`. When the terms allow you to republish the files, they go on the release tagged `data`, and that release exists by 18 November. When they do not, `data/README.md` gives the command that downloads the files from the source. A weight file the talk needs goes on a release. If a result depends on a random draw, the `decisions.md` entry records the seed.
 
 ## Checkpoints
 
@@ -63,7 +63,7 @@ R or Python. Use the language you can explain. AI assistants are allowed. On you
 - `decisions.md`. Append one entry per choice. Do not rewrite an old entry.
 - `CHECKLIST.md`. The lab, as checkboxes. Tick them in the final commit.
 - `analysis.ipynb`. The code, and the home of the diagram, the equations, the simulation check, the residuals and calibration, and the limits. A `.py` or `.R` file holds a function two people would otherwise edit in the notebook.
-- `requirements.txt`. The packages, with versions. An R project deletes it and commits `renv.lock`.
+- `requirements.txt` and `.python-version`. The packages, and the interpreter they were pinned for. An R project deletes both and commits `renv.lock`.
 - `.github/pull_request_template.md`. The form a pull request opens with.
 - `fig/`. Plots saved from the notebook, including `fig/layers.png`.
 - `data/README.md`. The source, the file names, and the commands that publish or download the data.
