@@ -34,13 +34,19 @@ The times are 7:00 pm Eastern. The submission is what has been pushed to `main` 
 
 - Proposal, 28 October. `PROPOSAL.md`, at most one page, with the three headings already in that file. The first entry in `decisions.md` records that choice and the alternative you set aside.
 - Preliminary results, 18 November. `analysis.ipynb` has the raw-data plot, the summary table, the split, one baseline, one model, and both held-out scores in the units of the decision. `decisions.md` has an entry for the split, the model, and the loss.
-- Final presentation, 9 December. `SLIDE.md` is the presentation. `decisions.md` runs from the proposal to the action on that slide. The repository meets `CHECKLIST.md`. The talk is that night, 7:30 to 10:15 pm. Three minutes, one slide, the same length for one person and for a group.
+- Final presentation, 9 December. `presentation.html` is the presentation. `decisions.md` runs from the proposal to the action on the first content slide. The repository meets `CHECKLIST.md`. The talk is that night, 7:30 to 10:15 pm. Three minutes, the same length for one person and for a group.
 
 A late push still gets a comment, and the issue says it was late. The checkpoints have no separate points. If `main` is not on GitHub when you are scheduled to present, that slot waits until it is, and no later than 16 December.
 
 ## The talk
 
-Four parts on the one slide: the action, the reason, the risk of that action with a number, and what it is worth to be less wrong. The risk is a probability or a cost the decision maker can use. The held-out score, in the units of the decision, stays in `analysis.ipynb` and has to agree with the slide. The code and the plots stay in the repository.
+The talk is `presentation.html`, opened in a browser. It is a title slide plus four slides: the action, the reason, the risk of that action with a number, and what it is worth to be less wrong. Do not add slides. The risk is a probability or a cost the decision maker can use. The held-out score, in the units of the decision, stays in `analysis.ipynb` and has to agree with the reason slide. Edit `presentation.qmd`, then render it:
+
+```bash
+quarto render presentation.qmd
+```
+
+Commit both files. The code and the plots stay in the repository.
 
 ## Data
 
@@ -52,7 +58,8 @@ R or Python. Use the language you can explain. AI assistants are allowed. On you
 
 ## Files
 
-- `PROPOSAL.md` and `SLIDE.md`. The proposal and the presentation. Replace the prompts. Leave the headings.
+- `PROPOSAL.md`. The proposal. Replace the prompts. Leave the headings.
+- `presentation.qmd` and `presentation.html`. The talk. A title slide and four slides. Replace the prompts. Leave the headings.
 - `decisions.md`. Append one entry per choice. Do not rewrite an old entry.
 - `CHECKLIST.md`. The lab, as checkboxes. Tick them in the final commit.
 - `analysis.ipynb`. The code, and the home of the diagram, the equations, the simulation check, the residuals and calibration, and the limits. A `.py` or `.R` file holds a function two people would otherwise edit in the notebook.

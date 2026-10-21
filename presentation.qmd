@@ -1,0 +1,26 @@
+---
+title: "Project title"
+format:
+  revealjs:
+    embed-resources: true
+    self-contained-math: true
+    slide-number: true
+    width: 1280
+    height: 720
+---
+
+## Action
+
+What should be done. Replace this sentence.
+
+## Reason
+
+Why, in the decision maker's units. The held-out score in `analysis.ipynb` has to agree with this slide.
+
+## Risk
+
+The main risk of the action: a probability or a cost, not the held-out score.
+
+## Value
+
+What it is worth to be less wrong, in the units of the loss.
