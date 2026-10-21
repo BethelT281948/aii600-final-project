@@ -1,6 +1,6 @@
 # Data
 
-The files the notebook reads are assets on the GitHub release tagged `data`. They are not committed. The release is public. If the data cannot be public, choose different data.
+The files the notebook reads are not committed. When the terms let you republish them, they are assets on the GitHub release tagged `data`. The release is public. When the terms let you download the files but not republish them, do not create that release. Write the command that downloads them from the source, and say what it needs (an account, a key in `.env`, a path).
 
 `OWNER/REPO` is your fork, the form `username/aii600-final-project`. In the clone, once:
 
@@ -28,6 +28,6 @@ gh release download data --dir data --repo OWNER/REPO
 
 Replace the lines below.
 
-- Source.
-- File names on the `data` release.
+- Source, and whether the terms let you republish the files.
+- File names. On the `data` release, or the command that downloads them from the source.
 - Unit of observation, sample size, and time span.

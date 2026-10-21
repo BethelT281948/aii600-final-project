@@ -1,2 +1,3 @@
 # Packages analysis.ipynb imports, with versions.
 # List those imports only. Do not paste the output of pip freeze.
+# An R project deletes this file and commits renv.lock instead.

@@ -15,18 +15,18 @@ The repository is public, and so is the fork.
 1. Fork https://github.com/VadimSokolov/aii600-final-project.
 2. On the fork, open Settings, then General, then Features, and turn Issues on.
 3. Settings, then Collaborators. Add teammates and `VadimSokolov`. The role is Write.
-4. Clone your fork. In that clone, run `gh repo set-default OWNER/REPO` with your fork, so `gh` does not act on the starter. A branch that has not been merged to `main` and pushed is not submitted.
+4. Install [GitHub CLI](https://cli.github.com/) and run `gh auth login`. Clone your fork. In that clone, run `gh repo set-default OWNER/REPO` with your fork, so `gh` does not act on the starter. A branch that has not been merged to `main` and pushed is not submitted.
 5. The invitation expires after seven days. Send it when the fork exists. If it expires before 28 October, send it again.
 
 Feedback comes back as an issue on the fork. I add the labels `proposal`, `preliminary`, and `final`. The issue is a comment on the work. It does not contain a score.
 
 ## Changes
 
-`main` is the submitted project, and it stays runnable. A person working alone may commit to `main`. A group does not. Branch from `main`, make one change, and open a pull request. Another member reads it and merges it. The request names the `decisions.md` entry it carries out, and that entry is part of the same merge. The commit message says why. Do not force-push `main`.
+`main` is the submitted project, and it stays runnable. A person working alone may commit to `main`. A group does not. Branch from `main`, make one change, and open a pull request. Set the base repository to your fork, not `VadimSokolov/aii600-final-project`. The starter does not accept pull requests. Another member reads the request and merges it. The request names the `decisions.md` entry it carries out, and that entry is part of the same merge. The commit message says why. Do not force-push `main`.
 
 Two people do not edit `analysis.ipynb` on two branches at once. A function you both change goes in a `.py` or `.R` file, and the notebook calls it. Before a checkpoint merge, run the notebook from the top and commit it with the outputs saved. Save the plots in `fig/`.
 
-`requirements.txt`, or `renv.lock` for R, lists the packages the notebook imports, with versions. Do not commit data files, secrets, or fitted weights. A key stays in `.env`. Data goes on the release tagged `data`, and that release exists by 18 November. A weight file the talk needs goes on a release. If a result depends on a random draw, the `decisions.md` entry records the seed.
+`requirements.txt` lists the packages the notebook imports, with versions. An R project deletes that file and commits `renv.lock` instead. Do not commit data files, secrets, or fitted weights. A key stays in `.env`. When the terms allow you to republish the files, they go on the release tagged `data`, and that release exists by 18 November. When they do not, `data/README.md` gives the command that downloads the files from the source. A weight file the talk needs goes on a release. If a result depends on a random draw, the `decisions.md` entry records the seed.
 
 ## Checkpoints
 
@@ -44,7 +44,7 @@ Four parts on the one slide: the action, the reason, the risk of that action wit
 
 ## Data
 
-Leave the data files out of git. Attach them to a GitHub release tagged `data`. The release is public. If the data cannot be public, choose different data. `data/README.md` names the source, the file names, and the commands that upload and download the release. The notebook reads a local copy of those files from `data/`. The diagram, the equations, the simulation check, the residuals and calibration, and the limits are sections of `analysis.ipynb`. The layer diagram is a file in `fig/`.
+Leave the data files out of git. A file you are allowed to republish goes on the GitHub release tagged `data`. The release is public. A file the terms let you download but not republish stays off the release: `data/README.md` gives the command that fetches it from the source. The notebook reads a local copy from `data/` either way.
 
 ## Tools
 
@@ -55,7 +55,8 @@ R or Python. Use the language you can explain. AI assistants are allowed. On you
 - `PROPOSAL.md` and `SLIDE.md`. The proposal and the presentation. Replace the prompts. Leave the headings.
 - `decisions.md`. Append one entry per choice. Do not rewrite an old entry.
 - `CHECKLIST.md`. The lab, as checkboxes. Tick them in the final commit.
-- `analysis.ipynb`. The code. A `.py` or `.R` file holds a function two people would otherwise edit in the notebook.
-- `requirements.txt` or `renv.lock`. The packages, with versions.
-- `fig/`. Plots saved from the notebook.
-- `data/README.md`. The source, and the file names on the `data` release.
+- `analysis.ipynb`. The code, and the home of the diagram, the equations, the simulation check, the residuals and calibration, and the limits. A `.py` or `.R` file holds a function two people would otherwise edit in the notebook.
+- `requirements.txt`. The packages, with versions. An R project deletes it and commits `renv.lock`.
+- `.github/pull_request_template.md`. The form a pull request opens with.
+- `fig/`. Plots saved from the notebook, including `fig/layers.png`.
+- `data/README.md`. The source, the file names, and the commands that publish or download the data.
