@@ -48,6 +48,13 @@ The final commit on `main` ticks every line you have done. A line you cannot tic
 - [ ] The key effects are in plain language and in real units.
 - [ ] The limits: where the model should not be trusted, what was assumed, and what you would do with more time or data.
 
+## Repository
+
+- [ ] Names and GitHub usernames are in `README.md`.
+- [ ] A group reached `main` through pull requests, and each request names a `decisions.md` entry.
+- [ ] `requirements.txt` or `renv.lock` pins the packages the notebook imports.
+- [ ] The `data` release holds the data files. The notebook on `main` was run from the top and committed with its outputs. Secrets and fitted weights are not in git.
+
 ## Disclosure
 
 - [ ] One line in `README.md`: which AI tools you used, and for what.

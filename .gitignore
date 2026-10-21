@@ -10,3 +10,14 @@ venv/
 
 data/*
 !data/README.md
+
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.hdf5
+*.pkl
+*.joblib
+*.onnx
+wandb/
+mlruns/

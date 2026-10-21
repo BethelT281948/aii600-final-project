@@ -6,7 +6,7 @@ Follow the [final project lab](https://vsokolov.org/labs/final-project-lab.html)
 
 ## Who
 
-Alone, or a group of at most three. One person forks. That person adds the other members as collaborators with Write access, and adds `VadimSokolov` with Read access. One person speaks at the presentation. Every member can explain the whole repository.
+Alone, or a group of at most three. One person forks. That person adds the other members as collaborators with Write access, and adds `VadimSokolov` with Read access. On the fork, write the names and GitHub usernames under this heading. One person speaks at the presentation. Every member can explain the whole repository.
 
 ## Fork
 
@@ -19,6 +19,14 @@ The repository is public, and so is the fork.
 5. The invitation to `VadimSokolov` expires after seven days. Send it before 28 October.
 
 Feedback comes back as an issue on the fork, labeled `proposal`, `preliminary`, or `final`.
+
+## Changes
+
+`main` is the submitted project, and it stays runnable. A person working alone may commit to `main`. A group does not. Branch from `main`, make one change, and open a pull request. Another member reads it and merges it. The request names the `decisions.md` entry it carries out, and that entry is part of the same merge. The commit message says why. Do not force-push `main`.
+
+Two people do not edit `analysis.ipynb` on two branches at once. A function you both change goes in a `.py` or `.R` file, and the notebook calls it. Before a checkpoint merge, run the notebook from the top and commit it with the outputs saved. Save the plots in `fig/`.
+
+`requirements.txt`, or `renv.lock` for R, lists the packages the notebook imports, with versions. Do not commit data files, secrets, or fitted weights. A key stays in `.env`. Data goes on the release tagged `data`, and that release exists by 18 November. A weight file the talk needs goes on a release. If a result depends on a random draw, the `decisions.md` entry records the seed.
 
 ## Checkpoints
 
@@ -47,6 +55,7 @@ R or Python. Use the language you can explain. AI assistants are allowed. On you
 - `PROPOSAL.md` and `SLIDE.md`. The proposal and the presentation. Replace the prompts. Leave the headings.
 - `decisions.md`. Append one entry per choice. Do not rewrite an old entry.
 - `CHECKLIST.md`. The lab, as checkboxes. Tick them in the final commit.
-- `analysis.ipynb`. The code.
+- `analysis.ipynb`. The code. A `.py` or `.R` file holds a function two people would otherwise edit in the notebook.
+- `requirements.txt` or `renv.lock`. The packages, with versions.
 - `fig/`. Plots saved from the notebook.
 - `data/README.md`. The source, and the file names on the `data` release.
