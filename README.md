@@ -2,7 +2,7 @@
 
 Fork this repository once per project. The fork tracks the code and the documents. The documents are the proposal, the presentation, and `decisions.md`, which is the history of what was done and why.
 
-Follow the [final project lab](https://vsokolov.org/labs/final-project-lab.html) from the question through the decision to the one-slide summary. The strawberry harvest on that page is the worked example. Your project is your own hypothesis, your own data, and a decision someone will make differently because of the model. `CHECKLIST.md` is the lab's "In your project" boxes. The ticks on the lab page are saved in that browser only. `CHECKLIST.md` is the list that counts.
+Follow the [final project lab](https://vsokolov.org/labs/final-project-lab.html) from the question through the decision to the short presentation. The strawberry harvest on that page is the worked example. Your project is your own hypothesis, your own data, and a decision someone will make differently because of the model. `CHECKLIST.md` is the lab's "In your project" boxes. The ticks on the lab page are saved in that browser only. `CHECKLIST.md` is the list that counts.
 
 ## Who
 
@@ -13,9 +13,9 @@ Alone, or a group of at most three. One person forks. That person adds the other
 The repository is public, and so is the fork.
 
 1. Fork https://github.com/VadimSokolov/aii600-final-project.
-2. On the fork, open Settings, then General, then Features, and turn Issues on.
+2. On the fork, open Settings, then General, then Features. Turn Issues on. Leave Pull requests on. The starter has them off, so a request cannot land there. A fork has them on.
 3. Settings, then Collaborators. Add teammates and `VadimSokolov`. The role is Write.
-4. Install [GitHub CLI](https://cli.github.com/) and run `gh auth login`. Clone your fork. In that clone, run `gh repo set-default OWNER/REPO` with your fork, so `gh` does not act on the starter. A branch that has not been merged to `main` and pushed is not submitted.
+4. Install the [GitHub CLI](https://cli.github.com/) and [Quarto](https://quarto.org/docs/get-started/). Run `gh auth login`. Clone your fork. Replace `x.y.z` in `.python-version` with the output of `python3 --version` before you run the notebook. In that clone, run `gh repo set-default OWNER/REPO` with your fork, so `gh` does not act on the starter. A branch that has not been merged to `main` and pushed is not submitted.
 5. The invitation expires after seven days. Send it when the fork exists. If it expires before 28 October, send it again.
 
 Feedback comes back as an issue on the fork. I add the labels `proposal`, `preliminary`, and `final`. The issue is a comment on the work. It does not contain a score.
@@ -46,7 +46,7 @@ The talk is `presentation.html`, opened in a browser. It is a title slide plus f
 quarto render presentation.qmd
 ```
 
-Commit both files. The code and the plots stay in the repository.
+Render it once, in the commit you will present, and commit both files. The HTML is large, and two people cannot merge it. The code and the plots stay in the repository.
 
 ## Data
 
