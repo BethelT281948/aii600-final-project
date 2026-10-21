@@ -36,7 +36,7 @@ Four parts on the one slide: the action, the reason, the risk with a number, and
 
 ## Data
 
-The fork is public. Commit the files the notebook reads, under `data/`, and name the source in `data/README.md`. A file GitHub will not take (over 100 MB) stays local, and `data/README.md` says how to obtain it. Identifiable data does not belong in the fork.
+Leave the data files out of git. Attach them to a GitHub release tagged `data`. `data/README.md` names the source and the file names on that release. The notebook reads a local copy of those files from `data/`.
 
 ## Tools
 
@@ -48,4 +48,4 @@ R or Python. Use the language you can explain. AI assistants are allowed. On you
 - `CHECKLIST.md`. The lab, as checkboxes. Tick them in the final commit.
 - `analysis.ipynb`. The analysis.
 - `fig/`. Plots saved from the notebook.
-- `data/README.md`. Where the data came from, and how to place the files on a local machine.
+- `data/README.md`. The source, and the file names on the `data` release.
