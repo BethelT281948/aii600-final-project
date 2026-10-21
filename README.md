@@ -10,7 +10,9 @@ Alone, or a group of at most three. One person forks. That person adds the other
 
 ## Fork
 
-1. Accept the invitation to this repository, then fork it. The fork of a private repository stays private.
+The repository is public, and so is the fork.
+
+1. Fork https://github.com/VadimSokolov/aii600-final-project.
 2. On the fork, open Settings, then General, then Features, and turn Issues on.
 3. Settings, then Collaborators. Add teammates with Write access. Add `VadimSokolov` with Read access.
 4. Clone the fork. Do the work on `main` and merge before the deadline. A branch that has not been merged is not submitted.
@@ -34,7 +36,7 @@ Four parts on the one slide: the action, the reason, the risk with a number, and
 
 ## Data
 
-Do not commit confidential, restricted, regulated, or identifiable data. Do not upload such data to an external assistant unless the owner has authorized that use. The `data/` folder is gitignored except for `data/README.md`, which names the source and how to obtain the files.
+The fork is public. Commit the files the notebook reads, under `data/`, and name the source in `data/README.md`. A file GitHub will not take (over 100 MB) stays local, and `data/README.md` says how to obtain it. Identifiable data does not belong in the fork.
 
 ## Tools
 
