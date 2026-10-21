@@ -8,7 +8,7 @@ State the claim in one sentence. Then name the single quantity you will forecast
 
 ## Data
 
-Name the source, the unit of observation, the sample size, the time span, and how the data were collected. Say how what you measure differs from the quantity the decision needs. Say whether the files can be committed.
+Name the source, the unit of observation, the sample size, the time span, and how the data were collected. Say how what you measure differs from the quantity the decision needs. Say whether the data can be public. The release is public, and the files are not committed.
 
 ## Decision affected by the model
 

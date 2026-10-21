@@ -1,6 +1,6 @@
 # Slide
 
-This is the only slide. Four short blocks. The number under Risk is the held-out score on `main`.
+This is the only slide. Four short blocks. The held-out score stays in `analysis.ipynb`, in the units of the decision, and the slide has to agree with it.
 
 ## Action
 
@@ -12,7 +12,7 @@ Why, in the decision maker's units.
 
 ## Risk
 
-The main risk, with a number.
+The main risk of the action: a probability or a cost, not the held-out score.
 
 ## Value
 

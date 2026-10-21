@@ -2,11 +2,11 @@
 
 Fork this repository once per project. The fork tracks the code and the documents. The documents are the proposal, the presentation, and `decisions.md`, which is the history of what was done and why.
 
-Follow the [final project lab](https://vsokolov.org/labs/final-project-lab.html) from the question through the decision to the one-slide summary. The strawberry harvest on that page is the worked example. Your project is your own hypothesis, your own data, and a decision someone will make differently because of the model. `CHECKLIST.md` is the lab's "In your project" boxes.
+Follow the [final project lab](https://vsokolov.org/labs/final-project-lab.html) from the question through the decision to the one-slide summary. The strawberry harvest on that page is the worked example. Your project is your own hypothesis, your own data, and a decision someone will make differently because of the model. `CHECKLIST.md` is the lab's "In your project" boxes. The ticks on the lab page are saved in that browser only. `CHECKLIST.md` is the list that counts.
 
 ## Who
 
-Alone, or a group of at most three. One person forks. That person adds the other members as collaborators with Write access, and adds `VadimSokolov` with Read access. On the fork, write the names and GitHub usernames under this heading. One person speaks at the presentation. Every member can explain the whole repository.
+Alone, or a group of at most three. One person forks. That person adds the other members and `VadimSokolov` as collaborators. On a repository owned by a personal account the role is Write. On the fork, write the names and GitHub usernames under this heading. One person speaks at the presentation. Every member can explain the whole repository.
 
 ## Fork
 
@@ -14,11 +14,11 @@ The repository is public, and so is the fork.
 
 1. Fork https://github.com/VadimSokolov/aii600-final-project.
 2. On the fork, open Settings, then General, then Features, and turn Issues on.
-3. Settings, then Collaborators. Add teammates with Write access. Add `VadimSokolov` with Read access.
-4. Clone the fork. Do the work on `main` and merge before the deadline. A branch that has not been merged is not submitted.
-5. The invitation to `VadimSokolov` expires after seven days. Send it before 28 October.
+3. Settings, then Collaborators. Add teammates and `VadimSokolov`. The role is Write.
+4. Clone your fork. In that clone, run `gh repo set-default OWNER/REPO` with your fork, so `gh` does not act on the starter. A branch that has not been merged to `main` and pushed is not submitted.
+5. The invitation expires after seven days. Send it when the fork exists. If it expires before 28 October, send it again.
 
-Feedback comes back as an issue on the fork, labeled `proposal`, `preliminary`, or `final`.
+Feedback comes back as an issue on the fork. I add the labels `proposal`, `preliminary`, and `final`. The issue is a comment on the work. It does not contain a score.
 
 ## Changes
 
@@ -30,21 +30,21 @@ Two people do not edit `analysis.ipynb` on two branches at once. A function you 
 
 ## Checkpoints
 
-The times are 7:00 pm Eastern. The submission is the last commit on `main` before then.
+The times are 7:00 pm Eastern. The submission is what has been pushed to `main` on GitHub before then. The time that counts is the push GitHub recorded, not the date on the commit.
 
 - Proposal, 28 October. `PROPOSAL.md`, at most one page, with the three headings already in that file. The first entry in `decisions.md` records that choice and the alternative you set aside.
 - Preliminary results, 18 November. `analysis.ipynb` has the raw-data plot, the summary table, the split, one baseline, one model, and both held-out scores in the units of the decision. `decisions.md` has an entry for the split, the model, and the loss.
 - Final presentation, 9 December. `SLIDE.md` is the presentation. `decisions.md` runs from the proposal to the action on that slide. The repository meets `CHECKLIST.md`. The talk is that night, 7:30 to 10:15 pm. Three minutes, one slide, the same length for one person and for a group.
 
-A late commit still gets a comment, and the issue says it was late. The checkpoints have no separate points. If the repository is not in when you are scheduled to present, that slot waits.
+A late push still gets a comment, and the issue says it was late. The checkpoints have no separate points. If `main` is not on GitHub when you are scheduled to present, that slot waits until it is, and no later than 16 December.
 
 ## The talk
 
-Four parts on the one slide: the action, the reason, the risk with a number, and what it is worth to be less wrong. The number is the held-out score on `main`. The code and the plots stay in the repository.
+Four parts on the one slide: the action, the reason, the risk of that action with a number, and what it is worth to be less wrong. The risk is a probability or a cost the decision maker can use. The held-out score, in the units of the decision, stays in `analysis.ipynb` and has to agree with the slide. The code and the plots stay in the repository.
 
 ## Data
 
-Leave the data files out of git. Attach them to a GitHub release tagged `data`. `data/README.md` names the source and the file names on that release. The notebook reads a local copy of those files from `data/`.
+Leave the data files out of git. Attach them to a GitHub release tagged `data`. The release is public. If the data cannot be public, choose different data. `data/README.md` names the source, the file names, and the commands that upload and download the release. The notebook reads a local copy of those files from `data/`. The diagram, the equations, the simulation check, the residuals and calibration, and the limits are sections of `analysis.ipynb`. The layer diagram is a file in `fig/`.
 
 ## Tools
 

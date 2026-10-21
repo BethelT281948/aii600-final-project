@@ -1,6 +1,6 @@
 # Checklist
 
-The final commit on `main` ticks every line you have done. A line you cannot tick needs one sentence saying why.
+Tick every line that the pushed `main` covers. A line you cannot tick needs one sentence saying why. This file is the list that counts. The ticks on the lab page do not.
 
 ## 1. Question
 
