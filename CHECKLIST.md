@@ -38,6 +38,10 @@ The final commit on `main` ticks every line you have done. A line you cannot tic
 - [ ] The method scored against a simple baseline in the units of the decision, not only RMSE or R².
 - [ ] Where the method wins, and where it ties.
 
+## Decisions
+
+- [ ] `decisions.md` is the history: each choice, why, the alternative rejected, and what would change it. Old entries are still in the file.
+
 ## 7. Communicate
 
 - [ ] `SLIDE.md` states the action, the reason, the risk with a number, and the value of being less wrong.

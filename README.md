@@ -1,6 +1,6 @@
 # AII 600 final project
 
-Fork this repository once per project. The fork is the project. The three checkpoints are files on `main`.
+Fork this repository once per project. The fork tracks the code and the documents. The documents are the proposal, the presentation, and `decisions.md`, which is the history of what was done and why.
 
 Follow the [final project lab](https://vsokolov.org/labs/final-project-lab.html) from the question through the decision to the one-slide summary. The strawberry harvest on that page is the worked example. Your project is your own hypothesis, your own data, and a decision someone will make differently because of the model. `CHECKLIST.md` is the lab's "In your project" boxes.
 
@@ -24,9 +24,9 @@ Feedback comes back as an issue on the fork, labeled `proposal`, `preliminary`, 
 
 The times are 7:00 pm Eastern. The submission is the last commit on `main` before then.
 
-- Proposal, 28 October. `PROPOSAL.md`, at most one page, with the three headings already in that file.
-- Preliminary results, 18 November. `PRELIM.md` and `analysis.ipynb`. A plot of the raw data, a summary table, a training split, one baseline, one model, both scored on held-out data in the units of the decision, and the loss as a formula.
-- Final presentation, 9 December. The repository meets `CHECKLIST.md`, and `SLIDE.md` is the slide. The talk is that night, 7:30 to 10:15 pm. Three minutes, one slide, the same length for one person and for a group.
+- Proposal, 28 October. `PROPOSAL.md`, at most one page, with the three headings already in that file. The first entry in `decisions.md` records that choice and the alternative you set aside.
+- Preliminary results, 18 November. `analysis.ipynb` has the raw-data plot, the summary table, the split, one baseline, one model, and both held-out scores in the units of the decision. `decisions.md` has an entry for the split, the model, and the loss.
+- Final presentation, 9 December. `SLIDE.md` is the presentation. `decisions.md` runs from the proposal to the action on that slide. The repository meets `CHECKLIST.md`. The talk is that night, 7:30 to 10:15 pm. Three minutes, one slide, the same length for one person and for a group.
 
 A late commit still gets a comment, and the issue says it was late. The checkpoints have no separate points. If the repository is not in when you are scheduled to present, that slot waits.
 
@@ -44,8 +44,9 @@ R or Python. Use the language you can explain. AI assistants are allowed. On you
 
 ## Files
 
-- `PROPOSAL.md`, `PRELIM.md`, `SLIDE.md`. Replace the prompts. Leave the headings.
+- `PROPOSAL.md` and `SLIDE.md`. The proposal and the presentation. Replace the prompts. Leave the headings.
+- `decisions.md`. Append one entry per choice. Do not rewrite an old entry.
 - `CHECKLIST.md`. The lab, as checkboxes. Tick them in the final commit.
-- `analysis.ipynb`. The analysis.
+- `analysis.ipynb`. The code.
 - `fig/`. Plots saved from the notebook.
 - `data/README.md`. The source, and the file names on the `data` release.
