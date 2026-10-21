@@ -15,7 +15,7 @@ The repository is public, and so is the fork.
 1. Fork https://github.com/VadimSokolov/aii600-final-project.
 2. On the fork, open Settings, then General, then Features. Turn Issues on. Leave Pull requests on. The starter has them off, so a request cannot land there. A fork has them on.
 3. Settings, then Collaborators. Add teammates and `VadimSokolov`. The role is Write.
-4. Install the [GitHub CLI](https://cli.github.com/) and [Quarto](https://quarto.org/docs/get-started/). Run `gh auth login`. Clone your fork. Replace `x.y.z` in `.python-version` with the output of `python3 --version` before you run the notebook. In that clone, run `gh repo set-default OWNER/REPO` with your fork, so `gh` does not act on the starter. A branch that has not been merged to `main` and pushed is not submitted.
+4. Install the [GitHub CLI](https://cli.github.com/) and [Quarto](https://quarto.org/docs/get-started/). Run `gh auth login`. Clone your fork. Python projects: before the first notebook run, replace `x.y.z` in `.python-version` with the version number of the kernel you run it with, for example `3.12.4`. In that clone, run `gh repo set-default OWNER/REPO` with your fork, so `gh` does not act on the starter. A branch that has not been merged to `main` and pushed is not submitted.
 5. The invitation expires after seven days. Send it when the fork exists. If it expires before 28 October, send it again.
 
 Feedback comes back as an issue on the fork. I add the labels `proposal`, `preliminary`, and `final`. The issue is a comment on the work. It does not contain a score.
@@ -26,7 +26,7 @@ Feedback comes back as an issue on the fork. I add the labels `proposal`, `preli
 
 Two people do not edit `analysis.ipynb` on two branches at once. A function you both change goes in a `.py` or `.R` file, and the notebook calls it. Before a checkpoint merge, run the notebook from the top and commit it with the outputs saved. Save the plots in `fig/`.
 
-`requirements.txt` lists the packages the notebook imports, with versions, for the interpreter in `.python-version`. Replace `x.y.z` in that file with the output of `python3 --version`. An R project deletes both files and commits `renv.lock` instead. That file records the R version. Do not commit data files, secrets, or fitted weights. A key stays in `.env`. When the terms allow you to republish the files, they go on the release tagged `data`, and that release exists by 18 November. When they do not, `data/README.md` gives the command that downloads the files from the source. A weight file the talk needs goes on a release. If a result depends on a random draw, the `decisions.md` entry records the seed.
+`requirements.txt` lists the packages the notebook imports, with versions, for the interpreter in `.python-version`. Python projects: that file holds the version number of the kernel that runs the notebook, for example `3.12.4`. An R project deletes both files and commits `renv.lock` instead. That file records the R version. Do not commit data files, secrets, or fitted weights. A key stays in `.env`. When the terms allow you to republish the files, they go on the release tagged `data`, and that release exists by 18 November. When they do not, `data/README.md` gives the command that downloads the files from the source. A weight file the talk needs goes on a release. If a result depends on a random draw, the `decisions.md` entry records the seed.
 
 ## Checkpoints
 

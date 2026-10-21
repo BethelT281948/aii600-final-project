@@ -44,7 +44,7 @@ Tick every line that the pushed `main` covers. A line you cannot tick needs one 
 
 ## 7. Communicate
 
-- [ ] `presentation.html` is a title slide plus the action, the reason, the risk with a number, and the value of being less wrong. It was rendered from `presentation.qmd`.
+- [ ] `presentation.html` is a title slide plus the action, the reason, the risk with a number, and the value of being less wrong. It was rendered from `presentation.qmd` after the last edit to that file.
 - [ ] The key effects are in plain language and in real units.
 - [ ] The limits: where the model should not be trusted, what was assumed, and what you would do with more time or data.
 
