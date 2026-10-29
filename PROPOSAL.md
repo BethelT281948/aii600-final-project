@@ -4,12 +4,12 @@ At most one page. Replace the prompts under each heading. Leave the headings.
 
 ## Hypothesis
 
-State the claim in one sentence. Then name the single quantity you will forecast or estimate, with its units and the time window.
+Machine learning can predict the number of days until a computer component fails based on its operating conditions, usage, and sensor measurements.
 
 ## Data
 
-Name the source, the unit of observation, the sample size, the time span, and how the data were collected. Say how what you measure differs from the quantity the decision needs. Say whether the terms let you republish the files. A release asset is a republished copy. If the terms do not allow that, the files stay off GitHub and `data/README.md` gives the command that downloads them from the source.
+The data will come from a publicly available predictive maintenance dataset, such as the AI4I 2020 Predictive Maintenance Dataset from the UCI Machine Learning Repository. Each observation represents one simulated industrial machine operating instance. The dataset contains 10,000 records and was generated to model predictive maintenance conditions. It includes operating temperatures, rotational speed, torque, tool wear, and machine failure labels. The dataset does not directly measure the number of days until a computer component fails, so the project will estimate failure risk rather than exact time to failure unless suitable time-based failure data are available.
 
 ## Decision affected by the model
 
-Name who acts, and what they will do differently because of the prediction. Say which mistake costs more.
+IT technicians and maintenance managers will use the model's predictions to identify equipment that may need inspection or replacement before failure occurs. Failing to identify a component that is about to fail may cause unexpected downtime and costly repairs, while predicting a failure that does not occur may lead to unnecessary maintenance.
