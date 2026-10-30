@@ -4,12 +4,12 @@ At most one page. Replace the prompts under each heading. Leave the headings.
 
 ## Hypothesis
 
-State the claim in one sentence. Then name the single quantity you will forecast or estimate, with its units and the time window.
+Machine learning can predict whether a computer hard drive will fail within the next 30 days based on its temperature, usage, and age.
 
 ## Data
 
-Name the source, the unit of observation, the sample size, the time span, and how the data were collected. Say how what you measure differs from the quantity the decision needs. Say whether the terms let you republish the files. A release asset is a republished copy. If the terms do not allow that, the files stay off GitHub and `data/README.md` gives the command that downloads them from the source.
+The data will come from a publicly available computer hardware failure dataset, such as the Backblaze Hard Drive Test Data. The unit of observation will be an individual hard drive recorded on a specific date. The sample size will depend on the selected dataset files. The data include daily drive information, such as temperature, operating hours, and failure status. The data are collected through hard drive monitoring systems. The measured information represents recorded drive conditions and failure history, while the decision requires predicting whether a drive will fail within the next 30 days.
 
 ## Decision affected by the model
 
-Name who acts, and what they will do differently because of the prediction. Say which mistake costs more.
+IT maintenance teams will use the predictions to identify hard drives that may need replacement before they fail. A false negative costs more because it could result in data loss and downtime. For example, if the model identifies a hard drive with a high probability of failure, technicians can prioritize that drive and transfer important files to another storage device before the failure occurs. This can help organizations protect important business information, maintain reliable computer systems, reduce unexpected repair expenses, and prevent interruptions to daily operations. The model can also help IT managers plan their hardware replacement budgets and determine which equipment needs attention first.
