@@ -1,9 +1,13 @@
 """Build the data files the notebook reads, from the public sources.
+
     python -I fetch_data.py
+
 Downloads EIA-930 six-month balance files and NOAA GHCN-Daily station files
 into data/raw/ (skipped when already there), then writes
+
     data/pjm_hourly.csv     PJM hourly demand and PJM's day-ahead forecast, MW
     data/weather_daily.csv  daily high and low temperature, deg C, five stations
+
 and prints the SHA-256 of each. EIA revises recent months, so a rebuild can
 differ from the files on the `data` release. The notebook reads the release.
 """
